@@ -41,7 +41,7 @@ int main( int nargs, char* argv[] )
 	MPI_Comm_rank(globComm, &rank);
 
 	// Rajout de code....
-	int nb_point = 100000; // Nombre de points total (Ici on choisit 1000.)
+	int nb_point = 100000; // Nombre de points total (Ici on choisit 100000.)
 	unsigned long nbSamples = (unsigned long)(nb_point/nbp);;
 	double pi_part = approximate_pi(nbSamples); // La valeur de pi calculee par le processus present
 	printf("La valeur de pi calculee par le processus %d: %f\n", rank, pi_part);
